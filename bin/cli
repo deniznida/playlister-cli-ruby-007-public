@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+require_relative '../app/models/playlister_cli'
+require_relative '../app/models/artist'
+require_relative '../app/models/genre'
+require_relative '../app/models/song'
+require_relative '../app/models/library_parser'
+PlaylisterCLI.new.call
 
 PlaylisterCLI.new.call

@@ -5,10 +5,10 @@ class PlaylisterCLI
   def initialize(parse_library = true, library_path = 'db/data')
     if parse_library
       @library_parser = LibraryParser.new(library_path)
-      @library_parser.parse
+      @library_parser.call
     end
 
-    @on = true
+  @on = true
   end
 
   def on?
